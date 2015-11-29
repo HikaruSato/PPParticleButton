@@ -25,6 +25,9 @@
                                     <constraint firstAttribute="height" constant="32" id="tAL-ps-VBd"/>
                                 </constraints>
                                 <state key="normal" title="effect!"/>
+                                <connections>
+                                    <action selector="tapEffect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NLo-NV-rGE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qe-71-gJl" customClass="PPEffectButton" customModule="PPEffectButtonExample" customModuleProvider="target">
                                 <rect key="frame" x="234" y="477" width="46" height="30"/>
@@ -34,6 +37,21 @@
                                     <constraint firstAttribute="width" constant="46" id="gLK-Ur-nVl"/>
                                 </constraints>
                                 <state key="normal" title="effect!"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSO-Af-B0D" customClass="PPEffectButton" customModule="PPEffectButtonExample" customModuleProvider="target">
+                                <rect key="frame" x="56" y="237" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thP-tm-hfR" customClass="PPEffectButton" customModule="PPEffectButtonExample" customModuleProvider="target">
+                                <rect key="frame" x="58" y="436" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E0-gK-1aG" customClass="PPEffectButton" customModule="PPEffectButtonExample" customModuleProvider="target">
+                                <rect key="frame" x="259" y="155" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <animations/>
