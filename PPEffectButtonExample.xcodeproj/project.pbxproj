@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65E03BFE1C0ABC31008ECB21 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E03BFD1C0ABC31008ECB21 /* star.png */; };
 		65E19DD41C0AAC5000CAD892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E19DD31C0AAC5000CAD892 /* AppDelegate.swift */; };
 		65E19DD61C0AAC5000CAD892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E19DD51C0AAC5000CAD892 /* ViewController.swift */; };
 		65E19DD91C0AAC5000CAD892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E19DD71C0AAC5000CAD892 /* Main.storyboard */; };
 		65E19DDB1C0AAC5000CAD892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E19DDA1C0AAC5000CAD892 /* Assets.xcassets */; };
 		65E19DDE1C0AAC5000CAD892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E19DDC1C0AAC5000CAD892 /* LaunchScreen.storyboard */; };
+		65E19DE71C0AACE200CAD892 /* PPEffectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E19DE61C0AACE200CAD892 /* PPEffectButton.swift */; };
+		65E19DE91C0AAD5800CAD892 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E19DE81C0AAD5800CAD892 /* SpriteKit.framework */; };
+		65E19DF01C0AB1EB00CAD892 /* PPEffectButtonParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 65E19DEE1C0AB1EB00CAD892 /* PPEffectButtonParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65E03BFD1C0ABC31008ECB21 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		65E19DD01C0AAC5000CAD892 /* PPEffectButtonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PPEffectButtonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E19DD31C0AAC5000CAD892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E19DD51C0AAC5000CAD892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		65E19DDA1C0AAC5000CAD892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E19DDD1C0AAC5000CAD892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65E19DDF1C0AAC5000CAD892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E19DE61C0AACE200CAD892 /* PPEffectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPEffectButton.swift; sourceTree = "<group>"; };
+		65E19DE81C0AAD5800CAD892 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		65E19DEE1C0AB1EB00CAD892 /* PPEffectButtonParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PPEffectButtonParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E19DE91C0AAD5800CAD892 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +47,7 @@
 		65E19DC71C0AAC5000CAD892 = {
 			isa = PBXGroup;
 			children = (
+				65E19DE81C0AAD5800CAD892 /* SpriteKit.framework */,
 				65E19DD21C0AAC5000CAD892 /* PPEffectButtonExample */,
 				65E19DD11C0AAC5000CAD892 /* Products */,
 			);
@@ -54,6 +64,7 @@
 		65E19DD21C0AAC5000CAD892 /* PPEffectButtonExample */ = {
 			isa = PBXGroup;
 			children = (
+				65E19DE51C0AAC9C00CAD892 /* PPEffectButton */,
 				65E19DD31C0AAC5000CAD892 /* AppDelegate.swift */,
 				65E19DD51C0AAC5000CAD892 /* ViewController.swift */,
 				65E19DD71C0AAC5000CAD892 /* Main.storyboard */,
@@ -62,6 +73,16 @@
 				65E19DDF1C0AAC5000CAD892 /* Info.plist */,
 			);
 			path = PPEffectButtonExample;
+			sourceTree = "<group>";
+		};
+		65E19DE51C0AAC9C00CAD892 /* PPEffectButton */ = {
+			isa = PBXGroup;
+			children = (
+				65E19DE61C0AACE200CAD892 /* PPEffectButton.swift */,
+				65E19DEE1C0AB1EB00CAD892 /* PPEffectButtonParticle.sks */,
+				65E03BFD1C0ABC31008ECB21 /* star.png */,
+			);
+			path = PPEffectButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +145,9 @@
 			files = (
 				65E19DDE1C0AAC5000CAD892 /* LaunchScreen.storyboard in Resources */,
 				65E19DDB1C0AAC5000CAD892 /* Assets.xcassets in Resources */,
+				65E19DF01C0AB1EB00CAD892 /* PPEffectButtonParticle.sks in Resources */,
 				65E19DD91C0AAC5000CAD892 /* Main.storyboard in Resources */,
+				65E03BFE1C0ABC31008ECB21 /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +160,7 @@
 			files = (
 				65E19DD61C0AAC5000CAD892 /* ViewController.swift in Sources */,
 				65E19DD41C0AAC5000CAD892 /* AppDelegate.swift in Sources */,
+				65E19DE71C0AACE200CAD892 /* PPEffectButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +308,7 @@
 				65E19DE41C0AAC5000CAD892 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
