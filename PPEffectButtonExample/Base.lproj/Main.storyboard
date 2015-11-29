@@ -24,7 +24,16 @@
                                     <constraint firstAttribute="width" constant="143" id="JU6-42-Q3X"/>
                                     <constraint firstAttribute="height" constant="32" id="tAL-ps-VBd"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="effect!"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qe-71-gJl" customClass="PPEffectButton" customModule="PPEffectButtonExample" customModuleProvider="target">
+                                <rect key="frame" x="234" y="477" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="71q-sR-8V4"/>
+                                    <constraint firstAttribute="width" constant="46" id="gLK-Ur-nVl"/>
+                                </constraints>
+                                <state key="normal" title="effect!"/>
                             </button>
                         </subviews>
                         <animations/>
@@ -32,6 +41,8 @@
                         <constraints>
                             <constraint firstItem="kA2-aq-jcC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ten-yz-87d"/>
                             <constraint firstItem="kA2-aq-jcC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pHr-CH-E4m"/>
+                            <constraint firstAttribute="trailing" secondItem="6qe-71-gJl" secondAttribute="trailing" constant="95" id="qeu-Gv-ZCb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6qe-71-gJl" secondAttribute="bottom" constant="160" id="s0T-Fv-L2O"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

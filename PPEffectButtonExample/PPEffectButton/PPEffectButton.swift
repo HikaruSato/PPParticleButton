@@ -44,8 +44,7 @@ class PPEffectButton: UIButton {
 		}
 
 		self.skView = SKView(frame:CGRect(
-			origin:CGPoint(x: -self.superview!.frame.size.width/2 + self.frame.size.width/2,
-				y: -self.superview!.frame.size.height/2 + self.frame.size.height/2),
+			origin:CGPoint(x: -self.frame.origin.x, y: -self.frame.origin.y),
 			size: self.superview!.frame.size))
 		skView.backgroundColor = UIColor.clearColor()
 		self.addSubview(skView)
@@ -53,7 +52,7 @@ class PPEffectButton: UIButton {
 		scene.scaleMode = SKSceneScaleMode.AspectFill
 		scene.backgroundColor = UIColor.clearColor()
 		let particle:SKEmitterNode = NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource(self.particleFileName, ofType: "sks")!) as! SKEmitterNode
-		particle.position = CGPoint(x: scene.size.width/2, y: scene.size.height/2)
+		particle.position = CGPoint(x: self.center.x, y: self.skView.frame.size.height - self.center.y)
 		self.skView.presentScene(scene)
 		let fadeOut = SKAction.fadeOutWithDuration(1.5)
 		let remove = SKAction.removeFromParent()
