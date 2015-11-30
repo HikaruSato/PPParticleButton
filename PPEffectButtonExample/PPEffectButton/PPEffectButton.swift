@@ -11,8 +11,6 @@ import SpriteKit
 import QuartzCore
 
 class PPEffectButton: UIButton {
-	private var skView:SKView! = nil
-	
 	var particleFileName:String = "PPEffectButtonParticle"
 
     /*
@@ -39,11 +37,7 @@ class PPEffectButton: UIButton {
 	}
 	
 	func tapEffect(button:UIButton) {
-		if self.skView != nil {
-			return
-		}
-
-		self.skView = SKView(frame:CGRect(
+		let skView = SKView(frame:CGRect(
 			origin:CGPoint(x: -self.frame.origin.x, y: -self.frame.origin.y),
 			size: self.superview!.frame.size))
 		skView.backgroundColor = UIColor.clearColor()
@@ -52,19 +46,19 @@ class PPEffectButton: UIButton {
 		scene.scaleMode = SKSceneScaleMode.AspectFill
 		scene.backgroundColor = UIColor.clearColor()
 		let particle:SKEmitterNode = NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource(self.particleFileName, ofType: "sks")!) as! SKEmitterNode
-		particle.position = CGPoint(x: self.center.x, y: self.skView.frame.size.height - self.center.y)
-		self.skView.presentScene(scene)
-		let fadeOut = SKAction.fadeOutWithDuration(1.5)
+		particle.position = CGPoint(x: self.center.x, y: skView.frame.size.height - self.center.y)
+		skView.presentScene(scene)
+		let animationDuration = 1.0
+		let fadeOut = SKAction.fadeOutWithDuration(animationDuration)
 		let remove = SKAction.removeFromParent()
 		let sequence = SKAction.sequence([fadeOut, remove])
 		particle.runAction(sequence)
-		self.skView.scene!.addChild(particle)
-		let delay = 1.5 * Double(NSEC_PER_SEC)
+		skView.scene!.addChild(particle)
+		let delay = animationDuration * Double(NSEC_PER_SEC)
 		let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-		dispatch_after(time, dispatch_get_main_queue(), { [weak self] in
-			self?.skView.presentScene(nil)
-			self?.skView.removeFromSuperview()
-			self?.skView = nil
+		dispatch_after(time, dispatch_get_main_queue(), {
+			skView.presentScene(nil)
+			skView.removeFromSuperview()
 		})
 	}
 }
