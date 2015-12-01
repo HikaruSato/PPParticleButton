@@ -48,13 +48,17 @@ class PPEffectButton: UIButton {
 		let particle:SKEmitterNode = NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource(self.particleFileName, ofType: "sks")!) as! SKEmitterNode
 		particle.position = CGPoint(x: self.center.x, y: skView.frame.size.height - self.center.y)
 		skView.presentScene(scene)
-		let animationDuration = 1.0
-		let fadeOut = SKAction.fadeOutWithDuration(animationDuration)
+		let effect = SKAction.speedTo(0, duration: 0.5)
+		let actionBlock = SKAction.runBlock { () -> Void in
+			particle.particleBirthRate = 0;
+		}
+		let fadeOut = SKAction()
+		fadeOut.duration = 1
 		let remove = SKAction.removeFromParent()
-		let sequence = SKAction.sequence([fadeOut, remove])
+		let sequence = SKAction.sequence([effect, actionBlock, fadeOut, remove])
 		particle.runAction(sequence)
 		skView.scene!.addChild(particle)
-		let delay = animationDuration * Double(NSEC_PER_SEC)
+		let delay = (effect.duration + fadeOut.duration + 0.1) * Double(NSEC_PER_SEC)
 		let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
 		dispatch_after(time, dispatch_get_main_queue(), {
 			skView.presentScene(nil)
