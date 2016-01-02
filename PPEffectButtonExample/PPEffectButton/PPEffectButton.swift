@@ -41,6 +41,7 @@ class PPEffectButton: UIButton {
 			origin:CGPoint(x: -self.frame.origin.x, y: -self.frame.origin.y),
 			size: self.superview!.frame.size))
 		skView.backgroundColor = UIColor.clearColor()
+		skView.allowsTransparency = true
 		self.addSubview(skView)
 		let scene = SKScene(size: self.superview!.frame.size)
 		scene.scaleMode = SKSceneScaleMode.AspectFill
@@ -58,7 +59,7 @@ class PPEffectButton: UIButton {
 		let sequence = SKAction.sequence([effect, actionBlock, fadeOut, remove])
 		particle.runAction(sequence)
 		skView.scene!.addChild(particle)
-		let delay = (effect.duration + fadeOut.duration + 0.1) * Double(NSEC_PER_SEC)
+		let delay = (effect.duration + fadeOut.duration) * Double(NSEC_PER_SEC)
 		let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
 		dispatch_after(time, dispatch_get_main_queue(), {
 			skView.presentScene(nil)
