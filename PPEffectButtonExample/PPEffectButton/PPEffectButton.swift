@@ -41,7 +41,11 @@ class PPEffectButton: UIButton {
 			origin:CGPoint(x: -self.frame.origin.x, y: -self.frame.origin.y),
 			size: self.superview!.frame.size))
 		skView.backgroundColor = UIColor.clearColor()
-		skView.allowsTransparency = true
+		if #available(iOS 8.0, *) {
+		    skView.allowsTransparency = true
+		} else {
+		    // Fallback on earlier versions
+		}
 		self.addSubview(skView)
 		let scene = SKScene(size: self.superview!.frame.size)
 		scene.scaleMode = SKSceneScaleMode.AspectFill
