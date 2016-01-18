@@ -11,7 +11,7 @@ PPParticleButton uses SKEmitterNode of SpriteKit, to create the tap animation.
 
 ## Installation
 
-### Create Podfile.
+### Create a Podfile.
 
 ```Podfile
 platform :ios, '8.0'
