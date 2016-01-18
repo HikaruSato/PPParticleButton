@@ -31,14 +31,10 @@ $ pod install
 1. Select File->New->File...->Resource->SpriteKit Particle File, and create a sksFile.
 
 2. Cutomize the SksFile on Xcode.
-
 ![Cutomize the SksFile](https://github.com/HIkaruSato/PPParticleButton/blob/master/images/PPPerticleButtonSKS_EditInXcode.gif)
-<br/>
 
 3. Initialize a PPParticleButton class on code. or set to "PPParticleButton" of button's className on storyboard.
-
 ![Set to "PPParticleButton" of button's className](https://github.com/HIkaruSato/PPParticleButton/blob/master/images/set_classname_on_storyboard.png)
-<br/>
 
 4. And only after you set the sksFile name (excluding the extension) to particleFileNameMap property of PPPerticleButton.
 
