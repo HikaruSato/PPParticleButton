@@ -1,7 +1,7 @@
 # PPParticleButton
 PPParticleButton is a UIButton subClass it has a cool tap animation, even though it can be used anywhere you can use a UIButton.
 PPParticleButton uses SKEmitterNode of SpriteKit, to create the tap animation.
-![alt effect image](https://github.com/HIkaruSato/PPParticleButton/blob/master/images/PPParticleButton.gif)
+![alt animation image](https://github.com/HIkaruSato/PPParticleButton/blob/master/images/PPParticleButton.gif)
 
 <br/>
 ## Requirements
@@ -32,7 +32,13 @@ $ pod install
 
 2. Cutomize the SksFile on Xcode.
 
-3. Initialize a PPParticleButton class on code. or set to  "PPParticleButton" of button's className on storyboard.
+![Cutomize the SksFile](https://github.com/HIkaruSato/PPParticleButton/blob/master/images/PPPerticleButtonSKS_EditInXcode.gif)
+<br/>
+
+3. Initialize a PPParticleButton class on code. or set to "PPParticleButton" of button's className on storyboard.
+
+![Set to "PPParticleButton" of button's className](https://github.com/HIkaruSato/PPParticleButton/blob/master/images/set_classname_on_storyboard.png)
+<br/>
 
 4. And only after you set the sksFile name (excluding the extension) to particleFileNameMap property of PPPerticleButton.
 
