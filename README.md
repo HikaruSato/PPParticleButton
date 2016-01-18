@@ -41,20 +41,22 @@ $ pod install
 * When tapped, works animation always.
 
 ```
-ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.Normal] = "Particle File名"
+ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.Normal] = "sksFile name"
 ```
 <br/>
 
 * When tapped, works animation during button unselected.
 
 ```
-ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.UnSelected] = "Particle File名"
+ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.UnSelected] = "sksFile name"
 ```
 <br/>
 * When tapped, works animation during selected.
 
 ```
-ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.Selected] = "Particle File名"
+ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.Selected] = "sksFile name"
 ```
 <br/>
+<br/>
 
+For more information, please refer to PPParticleButtonExample project.
