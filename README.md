@@ -57,6 +57,6 @@ ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.UnSelected] = "s
 ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.Selected] = "sksFile name"
 ```
 <br/>
-<br/>
 
+## Detail
 For more information, please refer to PPParticleButtonExample project.
