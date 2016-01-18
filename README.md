@@ -3,7 +3,7 @@ PPParticleButton is a UIButton subClass it has a cool tap animation, even though
 PPParticleButton uses SKEmitterNode of SpriteKit, to create the tap animation.
 ![alt effect image](https://github.com/HIkaruSato/PPParticleButton/blob/master/images/PPParticleButton.gif)
 
-
+<br/>
 ## Requirements
 
  * iOS 8.0+
@@ -43,7 +43,7 @@ ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.Normal] = "Parti
 ```
 <br/>
 
-* When tapped, works animation during unselected.
+* When tapped, works animation during button unselected.
 
 ```
 ppparticleButton.particleFileNameMap[PPParticleButtonEffectType.UnSelected] = "Particle File名"
