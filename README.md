@@ -1,4 +1,7 @@
+[![](http://img.shields.io/badge/iOS-8.0%2B-blue.svg)]() [![](http://img.shields.io/badge/Swift-3.0-blue.svg)]()
+
 # PPParticleButton
+
 PPParticleButton is a UIButton subClass it has a cool tap animation, even though it can be used anywhere you can use a UIButton.
 PPParticleButton uses SKEmitterNode of SpriteKit, to create the tap animation.
 ![alt animation image](https://github.com/HIkaruSato/PPParticleButton/blob/master/images/PPParticleButton.gif)
