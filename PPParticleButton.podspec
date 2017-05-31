@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'PPParticleButton'
-  s.version = '0.0.2'
+  s.version = '0.1.0'
   s.summary = 'PPParticleButton can particle effect when tapped.'
   s.homepage = 'https://github.com/HIkaruSato/PPParticleButton'
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
