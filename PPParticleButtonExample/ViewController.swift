@@ -17,8 +17,8 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
-		starBtn.particleFileNameMap[PPParticleButtonEffectType.Normal] = "StarParticle"
-		heartBtn.particleFileNameMap[PPParticleButtonEffectType.UnSelected] = "HeartParticle"
+		starBtn.particleFileNameMap[PPParticleButtonEffectType.normal] = "StarParticle"
+		heartBtn.particleFileNameMap[PPParticleButtonEffectType.unSelected] = "HeartParticle"
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -27,11 +27,11 @@ class ViewController: UIViewController {
 	}
 
 	
-	@IBAction func tapStarBtn(sender: AnyObject) {
+	@IBAction func tapStarBtn(_ sender: AnyObject) {
 	}
 	
-	@IBAction func tapHeartBtn(sender: AnyObject) {
-		heartBtn.selected = !heartBtn.selected
+	@IBAction func tapHeartBtn(_ sender: AnyObject) {
+		heartBtn.isSelected = !heartBtn.isSelected
 	}
 	
 
